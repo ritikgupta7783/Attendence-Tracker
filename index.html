@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Date display -->
+        <div id="currentDate" class="date-display"></div>
+
+        <h1>Attendance Tracker</h1>
+        <form id="attendanceForm">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>8am-9am</th>
+                        <th>9am-10am</th>
+                        <th>10am-11am</th>
+                        <th>11am-12pm</th>
+                        <th>12pm-1pm</th>
+                        <th>1pm-2pm</th>
+                        <th>2pm-5pm (Lab)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>
+                            MA201<br>
+                            Present <input type="radio" name="MA201" value="Present">
+                            Absent <input type="radio" name="MA201" value="Absent">
+                        </td>
+                        <td>
+                            EC221<br>
+                            Present <input type="radio" name="EC221" value="Present">
+                            Absent <input type="radio" name="EC221" value="Absent">
+                        </td>
+                        <td>
+                            EE223<br>
+                            Present <input type="radio" name="EE223" value="Present">
+                            Absent <input type="radio" name="EE223" value="Absent">
+                        </td>
+                        <td>
+                            CS201<br>
+                            Present <input type="radio" name="CS201" value="Present">
+                            Absent <input type="radio" name="CS201" value="Absent">
+                        </td>
+                        <td></td>
+                        <td>
+                            EE223 (T)<br>
+                            Present <input type="radio" name="EE223T" value="Present">
+                            Absent <input type="radio" name="EE223T" value="Absent">
+                        </td>
+                        <td>
+                            CS211 (Lab)<br>
+                            Present <input type="radio" name="CS211" value="Present">
+                            Absent <input type="radio" name="CS211" value="Absent">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td></td>
+                        <td>
+                            MA201<br>
+                            Present <input type="radio" name="MA201_2" value="Present">
+                            Absent <input type="radio" name="MA201_2" value="Absent">
+                        </td>
+                        <td>
+                            EC221<br>
+                            Present <input type="radio" name="EC221_2" value="Present">
+                            Absent <input type="radio" name="EC221_2" value="Absent">
+                        </td>
+                        <td>
+                            EE223<br>
+                            Present <input type="radio" name="EE223_2" value="Present">
+                            Absent <input type="radio" name="EE223_2" value="Absent">
+                        </td>
+                        <td></td>
+                        <td>
+                            CS202 (T)<br>
+                            Present <input type="radio" name="CS202T" value="Present">
+                            Absent <input type="radio" name="CS202T" value="Absent">
+                        </td>
+                        <td>
+                            EE224 (A1)<br>
+                            Present <input type="radio" name="EE224A1" value="Present">
+                            Absent <input type="radio" name="EE224A1" value="Absent">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>
+                            CS201 (T)<br>
+                            Present <input type="radio" name="CS201T" value="Present">
+                            Absent <input type="radio" name="CS201T" value="Absent">
+                        </td>
+                        <td>
+                            CS202<br>
+                            Present <input type="radio" name="CS202" value="Present">
+                            Absent <input type="radio" name="CS202" value="Absent">
+                        </td>
+                        <td>
+                            MA201<br>
+                            Present <input type="radio" name="MA201_3" value="Present">
+                            Absent <input type="radio" name="MA201_3" value="Absent">
+                        </td>
+                        <td>
+                            CS201<br>
+                            Present <input type="radio" name="CS201_3" value="Present">
+                            Absent <input type="radio" name="CS201_3" value="Absent">
+                        </td>
+                        <td></td>
+                        <td>
+                            MA201 (A2) (T)<br>
+                            Present <input type="radio" name="MA201A2T" value="Present">
+                            Absent <input type="radio" name="MA201A2T" value="Absent">
+                        </td>
+                        <td>
+                            EC222 (A2)<br>
+                            Present <input type="radio" name="EC222A2" value="Present">
+                            Absent <input type="radio" name="EC222A2" value="Absent">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td></td>
+                        <td>
+                            CS201<br>
+                            Present <input type="radio" name="CS201_4" value="Present">
+                            Absent <input type="radio" name="CS201_4" value="Absent">
+                        </td>
+                        <td>
+                            CS202<br>
+                            Present <input type="radio" name="CS202_4" value="Present">
+                            Absent <input type="radio" name="CS202_4" value="Absent">
+                        </td>
+                        <td>
+                            EE223<br>
+                            Present <input type="radio" name="EE223_4" value="Present">
+                            Absent <input type="radio" name="EE223_4" value="Absent">
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            EC222 (A1)<br>
+                            Present <input type="radio" name="EC222A1" value="Present">
+                            Absent <input type="radio" name="EC222A1" value="Absent">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td></td>
+                        <td>
+                            EC221 (T)<br>
+                            Present <input type="radio" name="EC221T" value="Present">
+                            Absent <input type="radio" name="EC221T" value="Absent">
+                        </td>
+                        <td>
+                            CS202<br>
+                            Present <input type="radio" name="CS202_5" value="Present">
+                            Absent <input type="radio" name="CS202_5" value="Absent">
+                        </td>
+                        <td>
+                            EC221<br>
+                            Present <input type="radio" name="EC221_5" value="Present">
+                            Absent <input type="radio" name="EC221_5" value="Absent">
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            EE224 (A2)<br>
+                            Present <input type="radio" name="EE224A2" value="Present">
+                            Absent <input type="radio" name="EE224A2" value="Absent">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit">Submit Attendance</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
